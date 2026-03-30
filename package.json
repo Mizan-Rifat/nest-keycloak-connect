@@ -12,7 +12,7 @@
     "release:alpha": "release-it --preReleaseId=alpha --npm.tag=next --github.preRelease",
     "format": "prettier src --write",
     "lint": "eslint src",
-    "prepare": "husky"
+    "prepare": "npm run build && husky"
   },
   "keywords": [
     "nestjs",
